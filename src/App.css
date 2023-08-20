@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Outfit&display=Outfit');
+
+* {
+  box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+  font-family: 'Outfit', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+p{
+  font-size: 1.5rem;
+}
+h1 {
+  font-size: 6rem;
+}
+.app {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  position: relative;
+}
+.app::before {
+  content: '';
+  background: url('./components//assest/background.jpg') no-repeat center center/cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.contianer {
+  max-width: 700px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 0 1rem;
+  position: relative;
+  justify-content: space-between;
+  top: 10%;
+}
+.app .update {
+  position: relative;
+  right: -90%;
+  transform-origin: 0 0;
+  transform: rotate(270deg);
+}
+.app .nextupdate {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  width: 100%;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.search {
+  text-align: center;
+  padding: 1rem;  
+}
+.search input {
+  padding: 0.7rem 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+::placeholder {
+  color: #cececc;
+}
